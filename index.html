@@ -40,8 +40,8 @@ a { color: inherit; text-underline-offset: 3px; text-decoration-color: var(--oro
   perspective: 1600px; perspective-origin: 50% 45%;
   --u: 1cqh;
 }
-.glow { position: absolute; inset: -10%; pointer-events: none; background: radial-gradient(30% 34% at var(--mx, 78%) var(--my, 18%), rgba(201,173,100,.22), transparent 70%); z-index: 0; }
-.world { position: absolute; inset: 0; transform-style: preserve-3d; transform: rotateX(var(--tx, 0deg)) rotateY(var(--ty, 0deg)); transition: transform 1s var(--ease); }
+.glow { position: absolute; inset: -10%; pointer-events: none; background: radial-gradient(30% 34% at 78% 18%, rgba(201,173,100,.22), transparent 70%); z-index: 0; }
+.world { position: absolute; inset: 0; transform-style: preserve-3d;  }
 
 .slide {
   position: absolute; inset: 0;
@@ -505,14 +505,6 @@ h1 em, h2 em { font-style: normal; color: var(--oro-hondo); }
     document.getElementById("npB").textContent = s.querySelector(".notes")?.textContent.trim() || "";
     if (!fromHash) history.replaceState(null, "", "#" + (i + 1));
   }
-  if (!reduce) stage.addEventListener("pointermove", e => {
-    const r = stage.getBoundingClientRect();
-    const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
-    world.style.setProperty("--ty", (x * 6).toFixed(2) + "deg");
-    world.style.setProperty("--tx", (-y * 4).toFixed(2) + "deg");
-    stage.style.setProperty("--mx", ((x + .5) * 100).toFixed(1) + "%");
-    stage.style.setProperty("--my", ((y + .5) * 100).toFixed(1) + "%");
-  });
   const toggleNotes = () => { const on = np.classList.toggle("on"); np.setAttribute("aria-hidden", on ? "false" : "true"); };
   document.addEventListener("keydown", e => {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
