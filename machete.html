@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Machete de la defensa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root { --bg: #0a1d16; --panel: #133426; --panel-2: #1b4433; --ink: #effaf0; --ink-2: rgba(239,250,240,.78); --lime: #8fe04f; --lime-deep: #5a9f2b; --sand: #ecdcae; --coral: #ff7f5c; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--ink); font-family: "Nunito", system-ui, sans-serif; font-weight: 600; font-size: 18px; line-height: 1.55; padding: 26px 16px 80px; -webkit-font-smoothing: antialiased; }
+::selection { background: var(--lime); color: var(--bg); }
+main { max-width: 680px; margin: 0 auto; }
+h1 { font-size: 32px; font-weight: 900; line-height: 1.1; }
+.sub { margin-top: 8px; color: var(--ink-2); }
+h2 { margin-top: 40px; font-size: 15px; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; color: var(--sand); }
+.box { margin-top: 12px; padding: 18px 20px; border-radius: 20px; background: var(--panel); border: 2px solid var(--panel-2); border-bottom-width: 6px; }
+.box b { color: var(--ink); font-weight: 900; }
+.one { font-size: 21px; font-weight: 800; line-height: 1.38; }
+details { margin-top: 10px; border-radius: 16px; background: var(--panel); border: 2px solid var(--panel-2); border-bottom-width: 5px; }
+summary { list-style: none; cursor: pointer; padding: 14px 16px; display: flex; gap: 12px; align-items: center; font-weight: 900; }
+summary::-webkit-details-marker { display: none; }
+summary .n { flex: none; width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; background: var(--lime); color: var(--bg); font-size: 15px; }
+details p { padding: 0 16px 16px; color: var(--ink-2); }
+details p b { color: var(--ink); font-weight: 900; }
+.clic { color: var(--lime); font-weight: 900; }
+ul { margin-top: 10px; padding-left: 1.2em; color: var(--ink-2); }
+li { margin-top: 8px; }
+li b { color: var(--ink); }
+a { color: var(--lime); }
+</style>
+</head>
+<body>
+<main>
+<h1>Machete: «Alguien abrió las cloacas desde un auto»</h1>
+<p class="sub">Gestión Ambiental · UCEMA · Final 2026 · unos 10 minutos. Tocá cada slide para ver el guion. <span class="clic">Clic</span> marca dónde avanzar dentro de la slide.</p>
+
+<h2>La idea en una frase</h2>
+<div class="box one">Cuando un hacker causa un daño ambiental, responde el que operaba el sistema, salvo que pruebe que fue una sorpresa. Y después de 25 años de ataques parecidos, ya no lo es.</div>
+
+<h2>Las tres anclas</h2>
+<div class="box">
+<b>Ley:</b> LGA art. 28 (responde sin culpa) y art. 29 (el tercero exime solo si se adoptaron «todas las medidas destinadas a evitarlo»). CCyC 1730 y 1731 (caso fortuito). Art. 41 CN (primero recomponer).<br><br>
+<b>Puente:</b> caso fortuito = sorpresa. Threat modeling = que nadie se sorprenda (Shostack).<br><br>
+<b>Decisión:</b> autorizar razonablemente con condiciones (Diaguita de Andalgalá). Threat model exigible, proporcional y revisado para el agua, las cloacas y las represas.
+</div>
+
+<h2>Slide por slide</h2>
+<details><summary><span class="n">1</span>Portada</summary><p>Me presento, trabajo en ciberseguridad. En el parcial, cuánto contamina el software. Hoy, alguien que contaminó un río <b>sin tocar el agua</b>. Pregunta jurídica: ¿quién se hace cargo?</p></details>
+<details><summary><span class="n">2</span>¿Un hacker puede contaminar un río?</summary><p>Preguntar al aula. <span class="clic">Clic</span> «Sí, ya pasó». Lo que se maneja con computadoras se maneja a distancia. Presentar a Gotita.</p></details>
+<details><summary><span class="n">3</span>6 de cada 10 casas</summary><p><b>62,6 %</b> de las viviendas tiene cloaca (Censo 2022). En CABA, casi el 100 %. Argentina ya trata al agua como <b>infraestructura crítica</b> (Res. 1523/2019). Esto también es nuestro.</p></details>
+<details><summary><span class="n">4</span>Maroochy en 4 pasos</summary><p>4 <span class="clic">clics</span>. Boden trabajaba en la empresa que instaló el sistema y renunció en diciembre de 1999. No lo tomaron en el municipio. Tenía radio, equipo y software. Desde el auto se hacía pasar por una estación. El líquido terminó en parques, ríos y el terreno de un hotel Hyatt.</p></details>
+<details><summary><span class="n">5</span>La radio obedecía a cualquiera</summary><p>Lo único técnico. El estudio del caso dice: <b>ninguna defensa de ciberseguridad</b>. <span class="clic">Clic</span> aparece el auto. Es el cuento del tío: «soy la estación 4». Se llama suplantación. Era el diseño de la época, no un descuido puntual.</p></details>
+<details><summary><span class="n">6</span>Los números</summary><p><b>46</b> órdenes falsas entre el 9/2 y el 23/4/2000. <b>800.000 litros</b>, un tercio de pileta olímpica (otras fuentes dicen millones). Murió vida marina, el arroyo se puso negro, olor insoportable. El 23/4 apagó alarmas de 4 estaciones y lo detuvieron con el equipo en el auto. <b>2 años</b> de prisión (octubre de 2001).</p></details>
+<details><summary><span class="n">7</span>Quiz</summary><p>«Hagamos como en Duolingo». A el hacker, B el que operaba, C nadie. Dejar contestar. <span class="clic">Clic</span>: <b>B</b>, salvo que pruebe que fue una sorpresa.</p></details>
+<details><summary><span class="n">8</span>Si pasara en Argentina</summary><p>4 <span class="clic">clics</span>. Art. 41: primero recomponer. Art. 28 LGA: responsabilidad objetiva. Art. 29: única salida, un tercero. Y la cita: <b>todas las medidas destinadas a evitarlo</b>. «Me hackearon» no alcanza. CCyC 1730 y 1731.</p></details>
+<details><summary><span class="n">9</span>Sorpresa</summary><p>2 <span class="clic">clics</span>. Caso fortuito = sorpresa. Threat modeling = que nadie se sorprenda. Shostack, el curso en San Francisco.</p></details>
+<details><summary><span class="n">10</span>Cuatro preguntas</summary><p>4 <span class="clic">clics</span>. Como la <b>habilitación de bomberos</b>, pero para ataques. ¿Qué construimos? ¿Qué puede salir mal? ¿Qué hacemos? ¿Lo hicimos bien? Es un dial, no un interruptor: <b>proporcionalidad</b>.</p></details>
+<details><summary><span class="n">11</span>Threat model de Maroochy</summary><p>La frontera de confianza es el <b>guardia del barrio cerrado</b>, y en Maroochy no había guardia. <span class="clic">Clic</span> el auto cruza. <span class="clic">Clics</span>: 1 suplantación, 2 órdenes alteradas, 3 acceso que nunca se cortó. <span class="clic">Clic</span>: identificación por orden, cortar accesos, alarmas.</p></details>
+<details><summary><span class="n">12</span>Seguridad y derecho</summary><p>8 <span class="clic">clics</span>. Eliminar es <b>prevención</b> (art. 4). Mitigar es <b>PHVA</b> (cuencas). Transferir es el <b>seguro ambiental</b> (art. 22). Aceptar es <b>responder si pasa</b> (art. 28).</p></details>
+<details><summary><span class="n">13</span>25 años, la misma puerta</summary><p>5 <span class="clic">clics</span>. 2000 Maroochy. 2021 Oldsmar: soda cáustica de 100 a 11.100 ppm, después se dijo que fue un error de un empleado, <b>en gris</b>. 2023 Aliquippa: contraseña de fábrica <b>1111</b>, grupo vinculado a Irán. 2025 Noruega: válvula al 100 % unas 4 horas, contraseña débil. La llave abajo de la maceta.</p></details>
+<details><summary><span class="n">14</span>No es un problema del 2000</summary><p>EPA, mayo de 2024: <b>más del 70 %</b> de los sistemas de agua inspeccionados no cumplía lo básico. Piletas: Maroochy 0,3 de cloacal. Noruega unos 7,2 millones de litros, casi 3 piletas, de agua limpia y <b>sin daño ambiental informado</b>.</p></details>
+<details><summary><span class="n">15</span>Mi conclusión</summary><p>5 <span class="clic">clics</span>. En 2000 pudo ser sorpresa. Hoy no. El operador responde, recompone y <b>después le reclama al atacante</b>. Autorizar razonablemente con 3 condiciones: threat model exigible como una EIA, proporcional y revisado.</p></details>
+<details><summary><span class="n">16</span>Límites y dilema</summary><p>Cifras que varían, Oldsmar en duda y sin fallo argentino. Y el art. <b>1757 CCyC</b>: en actividades riesgosas, cumplir técnicas de prevención no exime. El threat model es el piso, no un salvoconducto. <span class="clic">Clic</span>: ¿es justo que pague el atacado? <b>Sí, si dejó la puerta abierta.</b></p></details>
+<details><summary><span class="n">17</span>Cierre</summary><p>Al río no le importa quién lo atacó, le importa que nadie lo cuidó. <b>Que la próxima vez no sea una sorpresa.</b> Gracias.</p></details>
+
+<h2>Las tres preguntas que pueden venir</h2>
+<div class="box"><b>¿Qué principio y por qué?</b><br><b>Prevención</b>, porque el riesgo está documentado hace 25 años. La precaución es para cuando hay duda científica, y acá no la hay: no actuar sería negligencia. Lo complemento con <b>proporcionalidad</b>: más exigencia donde el daño puede ser mayor.</div>
+<div class="box"><b>¿Qué norma?</b><br><b>Ley 25.675, arts. 28 y 29</b>: responsabilidad objetiva y la eximente del tercero condicionada a «todas las medidas». <b>CCyC 1730 y 1731</b> (caso fortuito y hecho del tercero), <b>1710</b> (deber de prevenir) y <b>1757</b> (actividad riesgosa). <b>Art. 41 CN</b>. Art. 22 LGA, seguro ambiental. Res. 1523/2019, infraestructura crítica.</div>
+<div class="box"><b>¿Qué no pudiste medir?</b><br>No encontré jurisprudencia argentina de daño ambiental por ciberataque. Las cifras de Maroochy varían. Oldsmar quedó en duda. No sé cuántas plantas argentinas tienen un threat model, porque no es público. Y el fallo de apelación de Boden (R v Boden, 2002) no lo pude leer completo.</div>
+
+<h2>Si preguntan algo más</h2>
+<ul>
+<li><b>¿Y el atacante?</b> Responde penal y civilmente. El operador recompone primero y después repite contra él. En Argentina sería acceso ilegítimo y daño informático (Ley 26.388), agravado si afecta un servicio público.</li>
+<li><b>¿Por qué no prohibir la digitalización?</b> Porque trae beneficios: detectar pérdidas, alertas tempranas, menos desperdicio. No se trata de prohibir irracionalmente sino de autorizar razonablemente.</li>
+<li><b>¿El threat model alcanza para eximirse?</b> No necesariamente. El 1757 dice que cumplir técnicas de prevención no exime en actividades riesgosas. Es lo mínimo para discutir el art. 29, no una garantía.</li>
+<li><b>¿Qué es threat modeling?</b> Sentarse antes de construir y preguntar qué puede salir mal, con método y por escrito.</li>
+<li><b>¿Qué pasó en Noruega?</b> El PST (inteligencia noruega) lo atribuyó a hackers prorrusos en agosto de 2025. La causa se archivó en octubre por falta de datos sobre el autor.</li>
+</ul>
+<p class="sub" style="margin-top:34px">Deck: <a href="https://luciofex.github.io/presentaci-n-2-gestion-ambiental/">luciofex.github.io/presentaci-n-2-gestion-ambiental</a> · N muestra las notas, F pantalla completa.</p>
+</main>
+</body>
+</html>
