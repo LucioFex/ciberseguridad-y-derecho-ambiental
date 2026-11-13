@@ -79,6 +79,7 @@ sup.src { font-size: .45em; font-weight: 800; color: var(--lime); vertical-align
 .chrome .handle { color: var(--ink); }
 .chrome .sec { position: absolute; left: 50%; transform: translateX(-50%); font-size: 17px; letter-spacing: .16em; text-transform: uppercase; }
 .chrome .cnt { font-variant-numeric: tabular-nums; }
+.srcline { position: absolute; left: 140px; right: 140px; bottom: 116px; z-index: 5; font-size: 17px; font-weight: 500; line-height: 1.4; color: var(--ink-3); opacity: .85; pointer-events: none; }
 .pipe { position: absolute; left: 140px; right: 140px; bottom: 36px; height: 18px; border-radius: 999px; background: #121815; box-shadow: inset 0 2px 0 rgba(0, 0, 0, .5), 0 1px 0 rgba(214, 240, 222, .12); z-index: 5; overflow: hidden; }
 .pipe .water { position: absolute; left: 0; top: 0; bottom: 0; width: calc(var(--p, 0) * 100%); border-radius: 999px; background: var(--aqua); transition: width .8s var(--ease), background .6s var(--ease); }
 .pipe .water::after { content: ""; position: absolute; left: 10px; right: 10px; top: 4px; height: 4px; border-radius: 99px; background: rgba(255, 255, 255, .45); }
@@ -309,7 +310,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Pregunta al aula, esperar un segundo. Sí, ya pasó. Pensamos el hackeo como robo de datos o de plata. Pero hoy el agua, las cloacas y las represas se manejan con computadoras, y lo que se maneja con computadoras se puede manejar a distancia.</div>
 </section>
 
-<section class="slide" data-sec="Introducción" data-title="Esto nos toca de cerca">
+<section class="slide" data-sec="Introducción" data-title="Esto nos toca de cerca" data-src="Fuente: INDEC, Censo Nacional 2022, viviendas con desagüe a red cloacal.">
   <div class="row" style="gap:80px">
     <div style="flex:1">
       <h2 class="in" style="max-width:15ch">Más de 6 de cada 10 casas argentinas tiran la cadena a una red cloacal</h2>
@@ -320,7 +321,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Para que no suene a algo lejano de Australia. Según el Censo 2022 del INDEC, el 62,6 por ciento de las viviendas del país tiene desagüe a red cloacal. Seis de cada diez casas, y en la Ciudad casi el cien por ciento. Esas redes tienen bombas, válvulas y plantas que cada vez más se controlan a distancia. Y Argentina ya considera al agua una infraestructura crítica, con el impacto ambiental como uno de los criterios. O sea, esto también es nuestro.</div>
 </section>
 
-<section class="slide murky" data-sec="Introducción" data-title="Maroochy en cuatro pasos" data-dirty>
+<section class="slide murky" data-sec="Introducción" data-title="Maroochy en cuatro pasos" data-src="Fuentes: Abrams y Weiss, NIST y MITRE (2008). MITRE ATT&amp;CK, campaña C0020." data-dirty>
   <div class="row" style="justify-content:space-between; align-items:flex-end">
     <h2 class="in">Maroochy, Australia, año 2000</h2>
     <span class="in d1" style="font-size:24px;font-weight:700;color:var(--ink-3)">Simplificado para la clase</span>
@@ -334,7 +335,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">El caso es Maroochy, en Queensland, Australia, y se los cuento simplificado en cuatro pasos. Uno: Vitek Boden, un ingeniero de Queensland, en Australia, trabajaba en la empresa que instaló el sistema de control de las cloacas. Renunció en diciembre de 1999, pidió trabajo en el municipio y no lo tomaron. Dos: tenía una radio, un equipo de control y el software del sistema. Tres: desde el auto, por radio, se hacía pasar por una estación de bombeo y les daba órdenes a las bombas. Cuatro: el líquido cloacal terminó en parques, ríos y hasta en el terreno de un hotel Hyatt.</div>
 </section>
 
-<section class="slide murky" data-sec="Introducción" data-title="La radio obedecía a cualquiera" data-dirty>
+<section class="slide murky" data-sec="Introducción" data-title="La radio obedecía a cualquiera" data-src="Fuente: Abrams y Weiss, caso de estudio de NIST y MITRE (2008)." data-dirty>
   <div class="row" style="gap:60px; align-items:center">
     <div style="flex:0 0 640px">
       <h2 class="in">La radio obedecía a cualquiera</h2>
@@ -363,7 +364,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Lo único técnico de la charla, y es simple. El centro de control hablaba por radio con las estaciones de bombeo. El estudio del caso dice que no había ninguna defensa de ciberseguridad: nada que verificara quién mandaba cada orden. aparece Boden. Es el cuento del tío: llama, dice «soy la estación 4» y le creen. En seguridad eso se llama suplantación. Ojo: no fue un descuido puntual, así se diseñaban casi todos estos sistemas en el 2000. Eso va a importar después.</div>
 </section>
 
-<section class="slide murky" data-sec="Introducción" data-title="Los números del caso" data-dirty>
+<section class="slide murky" data-sec="Introducción" data-title="Los números del caso" data-src="Fuentes: Abrams y Weiss, NIST y MITRE (2008). MITRE ATT&amp;CK C0020. The Register (31/10/2001). Pileta olímpica: 50 × 25 × 2 m." data-dirty>
   <h2 class="in">Los números del caso</h2>
   <div class="stats">
     <div class="stat card in d1">
@@ -403,7 +404,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Hagamos como en Duolingo. Al hacker lo condenaron en lo penal, pero el río sigue sucio. ¿Quién paga la limpieza? A, el hacker. B, el que operaba el sistema. C, nadie, porque fue un tercero. Dejar que el aula conteste. según la ley argentina, la respuesta es B, salvo que demuestre que fue una sorpresa. Esa es mi tesis, y ahora la justifico.</div>
 </section>
 
-<section class="slide" data-sec="Desarrollo" data-title="Si pasara en Argentina">
+<section class="slide" data-sec="Desarrollo" data-title="Si pasara en Argentina" data-src="Fuentes: Constitución Nacional, art. 41. Ley 25.675, arts. 28 y 29 (InfoLEG).">
   <h2 class="in">Si pasara en Argentina</h2>
   <div class="chain">
     <div class="link-step card f"><div class="art">Constitución, art. 41</div><h3>Primero se recompone</h3><p>El daño ambiental obliga, antes que nada, a dejar el ambiente como estaba.</p></div>
@@ -416,7 +417,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Llevemos el caso a la Argentina, paso a paso. la Constitución, artículo 41, dice que el daño ambiental genera prioritariamente la obligación de recomponer. la Ley General del Ambiente, artículo 28: el que causa el daño responde de forma objetiva, sin importar si tuvo culpa. el artículo 29 es la clave. La única salida es probar que fue un tercero, como un hacker. pero miren lo que exige: haber adoptado todas las medidas destinadas a evitarlo. No alcanza con decir «me hackearon». El Código Civil y Comercial va en la misma línea: el hecho de un tercero solo libera si funciona como un caso fortuito, artículos 1730 y 1731.</div>
 </section>
 
-<section class="slide" data-sec="Desarrollo" data-title="La palabra clave: sorpresa">
+<section class="slide" data-sec="Desarrollo" data-title="La palabra clave: sorpresa" data-src="Fuentes: Código Civil y Comercial, art. 1730. Adam Shostack, shostack.org.">
   <h2 class="in" style="max-width:24ch">Las dos disciplinas giran alrededor de lo mismo: si se podía prever</h2>
   <div class="mirror">
     <div class="col f"><h2>Para el derecho, el caso fortuito es una sorpresa</h2><p>Es el hecho que no pudo preverse, o que previsto no pudo evitarse<sup class="src">6</sup>. Lo previsible no sirve como excusa.</p></div>
@@ -425,7 +426,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">La idea central del trabajo. para el derecho, el caso fortuito es, en criollo, una sorpresa. Algo que no se pudo prever, o que se previó pero no se pudo evitar. en ciberseguridad hay una disciplina, el threat modeling o modelado de amenazas. La enseña Adam Shostack, con quien hice un curso hace unos días en San Francisco. Él dice que el objetivo es que nadie se sorprenda. El derecho pregunta si se podía prever, y la seguridad trabaja para preverlo.</div>
 </section>
 
-<section class="slide" data-sec="Desarrollo" data-title="Las cuatro preguntas de Shostack">
+<section class="slide" data-sec="Desarrollo" data-title="Las cuatro preguntas de Shostack" data-src="Fuente: Adam Shostack, «Four Question Framework», shostack.org.">
   <h2 class="in">Cuatro preguntas para que nadie se sorprenda</h2>
   <p class="lead in d1 mt-s" style="max-width:48ch; font-size:32px">Es como la habilitación de bomberos de un local, pero para ataques: se hace antes, con método y por escrito.</p>
   <div class="q4">
@@ -437,7 +438,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">El método de Shostack son cuatro preguntas. Es como la habilitación de bomberos de un local, pero para ataques: antes de abrir, con método y por escrito. Uno, qué estamos construyendo: dibujar el sistema. Dos, qué puede salir mal. Tres, qué vamos a hacer al respecto. Cuatro, si hicimos un buen trabajo, que es revisar. Y Shostack dice que no es un interruptor, es un dial: siempre se hace y la intensidad depende del riesgo. En nuestra materia eso se llama proporcionalidad.</div>
 </section>
 
-<section class="slide" data-sec="Desarrollo" data-title="El threat model de Maroochy">
+<section class="slide" data-sec="Desarrollo" data-title="El threat model de Maroochy" data-src="Elaboración propia sobre Abrams y Weiss (2008), simplificado para la clase.">
   <h2 class="in">El threat model de Maroochy</h2>
   <div class="tm">
     <svg class="in d1" viewBox="0 0 1020 640" width="1020" height="640" role="img" aria-label="Diagrama del sistema: control, radio, bombas y río dentro de una frontera de confianza punteada. Un auto de afuera cruza la frontera.">
@@ -473,7 +474,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Así se ve un threat model, simplificado. Pregunta uno, qué construimos: control, radio, bombas y, al final, el río. La línea verde punteada es la frontera de confianza: de acá para adentro confiamos. Es como el guardia de la entrada de un barrio cerrado, y en Maroochy no había guardia. aparece el auto y cruza la frontera sin que nadie le pida nada. Pregunta dos, qué puede salir mal. uno, suplantación. dos, órdenes alteradas. tres, un acceso que nunca se cortó. Pregunta tres, qué hacer. pedir identificación a cada orden, cortar accesos al que se va y alarmas. Nada de esto exigía ser un genio, solo hacerse la pregunta.</div>
 </section>
 
-<section class="slide" data-sec="Desarrollo" data-title="Seguridad y derecho hablan el mismo idioma">
+<section class="slide" data-sec="Desarrollo" data-title="Seguridad y derecho hablan el mismo idioma" data-src="Fuentes: Ley 25.675, arts. 4, 22 y 28. Respuestas a riesgos según Shostack.">
   <h2 class="in" style="max-width:30ch; font-size:62px">Las respuestas de la seguridad ya tienen nombre en el derecho ambiental</h2>
   <div class="map">
     <div class="hd in d1">En seguridad</div><div></div><div class="hd in d1">En derecho ambiental</div>
@@ -485,7 +486,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Lo que más me sorprendió armando el trabajo. La pregunta tres de Shostack tiene cuatro respuestas posibles, y las cuatro ya existen en el derecho ambiental con otro nombre. eliminar el riesgo es prevención, artículo 4. Mitigar es la mejora continua que vimos con cuencas: planificar, hacer, verificar, actuar. Transferir es el seguro ambiental del artículo 22. Y aceptar el riesgo está bien, pero si pasa, respondés, artículo 28. Son las mismas herramientas con otro nombre.</div>
 </section>
 
-<section class="slide murky" data-sec="Desarrollo" data-title="Veinticinco años, la misma puerta" data-dirty>
+<section class="slide murky" data-sec="Desarrollo" data-title="Veinticinco años, la misma puerta" data-src="Fuentes: NIST y MITRE (2008). NBC News (2021) y Route Fifty (2023). CISA (28/11/2023). Anadolu (13/08/2025)." data-dirty>
   <h2 class="in">Veinticinco años con la misma puerta abierta</h2>
   <div class="tl">
     <div class="ev f"><div class="dot"><img src="img/estacion.png" alt=""></div><div class="y">2000</div><div class="w">Maroochy, Australia</div><div class="d">Órdenes por radio sin ninguna defensa.<sup class="src">2</sup></div></div>
@@ -497,7 +498,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Este es el centro del argumento. 2000, Maroochy. 2021, Oldsmar, Florida. Se informó que alguien subió la soda cáustica del agua potable de 100 a 11.100 partes por millón. En 2023, un ex administrador de la ciudad dijo que fue un error de un empleado, así que lo marco gris y no lo uso como prueba. 2023, Aliquippa, Pensilvania. Un grupo vinculado a Irán atacó equipos de plantas de agua que tenían la contraseña de fábrica, 1111. 2025, Noruega. Abrieron al cien por ciento la válvula de una represa durante unas cuatro horas, por una contraseña débil según el gerente técnico. usar la contraseña de fábrica es dejar la llave abajo de la maceta. Veinticinco años, la misma puerta abierta.</div>
 </section>
 
-<section class="slide photo" data-sec="Desarrollo" data-title="Noruega, abril de 2025">
+<section class="slide photo" data-sec="Desarrollo" data-title="Noruega, abril de 2025" data-src="Fuentes: Anadolu (13/08/2025). iLaks, citando a NRK (03/10/2025).">
   <div class="bg" style="background-image:url('img/represa.jpg')"></div>
   <span class="cap">Imagen ilustrativa generada con IA</span>
   <div class="txt">
@@ -507,7 +508,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">El caso más reciente. El 7 de abril de 2025, en Bremanger, al oeste de Noruega, alguien entró al panel remoto de una represa y abrió una válvula al cien por ciento. Estuvo así unas cuatro horas hasta que lo notaron. El gerente técnico dijo que fue por una contraseña débil. En agosto, la inteligencia noruega se lo atribuyó a hackers prorrusos. No hubo daño ambiental, pero muestra que la puerta sigue abierta.</div>
 </section>
 
-<section class="slide murky" data-sec="Desarrollo" data-title="No es un problema del 2000" data-dirty>
+<section class="slide murky" data-sec="Desarrollo" data-title="No es un problema del 2000" data-src="Fuentes: EPA, alerta de cumplimiento del 20/05/2024. Noruega: cálculo propio con datos de Anadolu e iLaks." data-dirty>
   <h2 class="in">No es un problema del 2000</h2>
   <div class="charts">
     <div class="chart card in d1">
@@ -531,7 +532,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Por si alguien piensa que esto es cosa del pasado. En mayo de 2024 la Agencia de Protección Ambiental de Estados Unidos informó que más del 70 por ciento de los sistemas de agua que inspeccionó no cumplía requisitos básicos de ciberseguridad: contraseñas por defecto, sin doble factor de autenticación, planes incompletos. A la derecha, en piletas olímpicas: Maroochy fue un tercio de pileta de líquido cloacal. En Noruega, 497 litros por segundo de más durante unas cuatro horas son unos 7,2 millones de litros, casi tres piletas. Aclaro que en Noruega era agua limpia y no se informó daño ambiental, pero muestra cuánto se puede mover a distancia.</div>
 </section>
 
-<section class="slide" data-sec="Conclusiones personales" data-title="Mi conclusión">
+<section class="slide" data-sec="Conclusiones personales" data-title="Mi conclusión" data-src="Fuentes: CSJN, «Diaguita de Andalgalá» (2012). Resolución 1523/2019, infraestructuras críticas.">
   <h2 class="in">Mi conclusión: la respuesta cambia con el tiempo</h2>
   <div class="verdict">
     <div class="col f"><div class="y">En 2000</div><div class="s">Pudo ser una sorpresa</div><p>Casi nadie protegía estos sistemas. Se podía discutir la eximente del tercero.</p></div>
@@ -545,7 +546,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
   <div class="notes">Mi conclusión personal. en el 2000, Maroochy podía discutir que fue una sorpresa, casi nadie protegía estos sistemas. hoy no. El riesgo se conoce hace veinticinco años, así que no hay caso fortuito. El que opera responde, recompone el río y después le reclama al atacante. No propongo frenar la digitalización del agua, que tiene muchos beneficios. Propongo autorizar razonablemente, como dijo la Corte en Diaguita de Andalgalá, con tres condiciones. que la infraestructura que puede dañar el ambiente presente un threat model, como presenta una evaluación de impacto. Argentina ya lista al agua como infraestructura crítica, resolución 1523 de 2019. proporcional al riesgo. escrito y revisado, porque es la mejor prueba de que se adoptaron todas las medidas.</div>
 </section>
 
-<section class="slide" data-sec="Conclusiones personales" data-title="Límites y dilema abierto">
+<section class="slide" data-sec="Conclusiones personales" data-title="Límites y dilema abierto" data-src="Fuente: Código Civil y Comercial, art. 1757.">
   <div class="limits">
     <div class="card in d1">
       <h3 style="font-size:36px">Lo que no pude medir</h3>
@@ -596,6 +597,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
 </section>
 
 <div class="chrome" aria-hidden="true"><span class="handle">Luciano Esteban · UCEMA</span><span class="sec" id="sec"></span><span class="cnt" id="cnt"></span></div>
+<p class="srcline" id="srcline"></p>
 <div class="pipe" aria-hidden="true"><div class="water" id="water"></div></div>
 </main>
 
@@ -642,6 +644,7 @@ svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--i
     stage.classList.toggle("dirty", s.hasAttribute("data-dirty"));
     document.getElementById("cnt").textContent = `${i + 1} / ${slides.length}`;
     document.getElementById("sec").textContent = s.dataset.sec || "";
+    document.getElementById("srcline").innerHTML = s.dataset.src || "";
     document.getElementById("water").style.setProperty("--p", (i + 1) / slides.length);
     document.getElementById("npT").textContent = `${i + 1} de ${slides.length} · ${s.dataset.title}`;
     document.getElementById("npN").textContent = nx ? `Sigue: ${nx.dataset.title}` : "Última";
