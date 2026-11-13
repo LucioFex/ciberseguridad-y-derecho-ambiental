@@ -184,7 +184,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
 .thr.fix { background: #1c3f17; border-color: #2a5a22; border-bottom-color: var(--lime-deep); }
 .thr.fix .b { background: var(--lime); border-bottom-color: var(--lime-deep); }
 .thr.fix .b svg path { stroke: var(--bg); stroke-width: 4.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.thr h4 { font-size: 28px; font-weight: 900; }
+.thr h3.h4 { font-size: 28px; font-weight: 900; }
 .thr p { margin-top: 4px; font-size: 22px; font-weight: 600; line-height: 1.35; color: var(--ink-2); }
 
 .map { margin-top: 30px; display: grid; grid-template-columns: 1fr 120px 1fr; row-gap: 14px; align-items: center; }
@@ -312,12 +312,12 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     <span class="in d1" style="font-size:24px;font-weight:700;color:var(--ink-3)">Simplificado para la clase</span>
   </div>
   <div class="steps">
-    <div class="step card f"><div class="pic"><img src="img/central.png" alt=""></div><div class="num">1</div><h3>Lo instaló y se fue</h3><p>Un ingeniero ayudó a instalar el sistema de cloacas. Pidió trabajo en el municipio y no lo tomaron.</p></div>
+    <div class="step card f"><div class="pic"><img src="img/central.png" alt=""></div><div class="num">1</div><h3>Lo instaló y se fue</h3><p>Vitek Boden, un ingeniero de Queensland, Australia, ayudó a instalar el sistema. Pidió trabajo en el municipio y no lo tomaron.</p></div>
     <div class="step card f"><div class="pic"><img src="img/auto.png" alt=""></div><div class="num">2</div><h3>Se quedó con las llaves</h3><p>Tenía una radio, un equipo de control y el software para hablarle al sistema.</p></div>
     <div class="step card bad f"><div class="pic"><img src="img/estacion.png" alt=""></div><div class="num">3</div><h3>Se hizo pasar por una estación</h3><p>Desde el auto, por radio, les daba órdenes a las bombas.</p></div>
     <div class="step card bad f"><div class="pic"><img src="img/rio.png" alt=""></div><div class="num">4</div><h3>Las cloacas se desbordaron</h3><p>El líquido cloacal terminó en parques, ríos y el terreno de un hotel.</p></div>
   </div>
-  <div class="notes">El caso es Maroochy, en Queensland, Australia, y se los cuento simplificado en cuatro pasos. Uno: Vitek Boden trabajaba en la empresa que instaló el sistema de control de las cloacas. Renunció en diciembre de 1999, pidió trabajo en el municipio y no lo tomaron. Dos: tenía una radio, un equipo de control y el software del sistema. Tres: desde el auto, por radio, se hacía pasar por una estación de bombeo y les daba órdenes a las bombas. Cuatro: el líquido cloacal terminó en parques, ríos y hasta en el terreno de un hotel Hyatt.</div>
+  <div class="notes">El caso es Maroochy, en Queensland, Australia, y se los cuento simplificado en cuatro pasos. Uno: Vitek Boden, un ingeniero de Queensland, en Australia, trabajaba en la empresa que instaló el sistema de control de las cloacas. Renunció en diciembre de 1999, pidió trabajo en el municipio y no lo tomaron. Dos: tenía una radio, un equipo de control y el software del sistema. Tres: desde el auto, por radio, se hacía pasar por una estación de bombeo y les daba órdenes a las bombas. Cuatro: el líquido cloacal terminó en parques, ríos y hasta en el terreno de un hotel Hyatt.</div>
 </section>
 
 <section class="slide murky" data-sec="Introducción" data-title="La radio obedecía a cualquiera" data-dirty>
@@ -449,10 +449,10 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
       </g>
     </svg>
     <div class="legend">
-      <div class="thr card f"><div class="b">1</div><div><h4>Suplantación</h4><p>Alguien de afuera dice «soy la estación 4».</p></div></div>
-      <div class="thr card f"><div class="b">2</div><div><h4>Órdenes alteradas</h4><p>Las bombas hacen lo contrario de lo que deberían.</p></div></div>
-      <div class="thr card f"><div class="b">3</div><div><h4>Un acceso que nunca se cortó</h4><p>El que se fue sigue sabiendo entrar.</p></div></div>
-      <div class="thr fix card f"><div class="b"><svg width="26" height="26" viewBox="0 0 26 26"><path d="M5 14 l6 6 l11 -13"/></svg></div><div><h4>Qué hacer</h4><p>Pedir identificación a cada orden, cortar accesos al que se va y alarmas si una bomba hace algo raro.</p></div></div>
+      <div class="thr card f"><div class="b">1</div><div><h3 class="h4">Suplantación</h3><p>Alguien de afuera dice «soy la estación 4».</p></div></div>
+      <div class="thr card f"><div class="b">2</div><div><h3 class="h4">Órdenes alteradas</h3><p>Las bombas hacen lo contrario de lo que deberían.</p></div></div>
+      <div class="thr card f"><div class="b">3</div><div><h3 class="h4">Un acceso que nunca se cortó</h3><p>El que se fue sigue sabiendo entrar.</p></div></div>
+      <div class="thr fix card f"><div class="b"><svg width="26" height="26" viewBox="0 0 26 26"><path d="M5 14 l6 6 l11 -13"/></svg></div><div><h3 class="h4">Qué hacer</h3><p>Pedir identificación a cada orden, cortar accesos al que se va y alarmas si una bomba hace algo raro.</p></div></div>
     </div>
   </div>
   <div class="notes">Así se ve un threat model, simplificado. Pregunta uno, qué construimos: control, radio, bombas y, al final, el río. La línea verde punteada es la frontera de confianza: de acá para adentro confiamos. Es como el guardia de la entrada de un barrio cerrado, y en Maroochy no había guardia. Clic: aparece el auto y cruza la frontera sin que nadie le pida nada. Pregunta dos, qué puede salir mal. Clic: uno, suplantación. Clic: dos, órdenes alteradas. Clic: tres, un acceso que nunca se cortó. Pregunta tres, qué hacer. Clic: pedir identificación a cada orden, cortar accesos al que se va y alarmas. Nada de esto exigía ser un genio, solo hacerse la pregunta.</div>
