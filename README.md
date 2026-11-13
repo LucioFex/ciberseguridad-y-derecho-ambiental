@@ -1,6 +1,6 @@
 # Alguien abrió las cloacas desde un auto
 
-Presentación del trabajo final de **Gestión Ambiental** (UCEMA, Ingeniería en Informática), por Luciano Esteban (@luciofex).
+Presentación del trabajo final de **Gestión Ambiental** (UCEMA, Ingeniería en Informática), por Luciano Esteban.
 
 **Ver la presentación:** https://luciofex.github.io/presentaci-n-2-gestion-ambiental/
 **Machete de la defensa (celular):** https://luciofex.github.io/presentaci-n-2-gestion-ambiental/machete.html
@@ -17,4 +17,4 @@ El trabajo cruza el derecho ambiental argentino (Constitución art. 41, Ley Gene
 - N muestra las notas del orador
 - F pone pantalla completa
 
-Un solo `index.html` con las imágenes en `img/`, publicado con GitHub Pages. Las ilustraciones y las fotos son imágenes generadas con IA, con fines ilustrativos. Todas las fuentes están en la última slide.
+Un solo `index.html` con las imágenes en `img/`. Un clic por slide: cada una se arma sola, publicado con GitHub Pages. Las ilustraciones y las fotos son imágenes generadas con IA, con fines ilustrativos. Todas las fuentes están en la última slide.

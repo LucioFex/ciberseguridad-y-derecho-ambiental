@@ -4,37 +4,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alguien abrió las cloacas</title>
-<meta name="description" content="Ciberataques, daño ambiental y quién se hace cargo. Trabajo final de Gestión Ambiental, UCEMA 2026. Luciano Esteban (@luciofex).">
+<meta name="description" content="Ciberataques, daño ambiental y quién se hace cargo. Trabajo final de Gestión Ambiental, UCEMA 2026. Luciano Esteban.">
 <meta property="og:title" content="Alguien abrió las cloacas desde un auto">
 <meta property="og:description" content="Ciberataques, daño ambiental y quién se hace cargo. Gestión Ambiental, UCEMA 2026.">
-<meta property="og:image" content="img/portada.jpg">
+<meta property="og:image" content="img/portada-p.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;0,600;0,700;0,800;0,900;1,600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --bg: #1a4233;
-  --bg-2: #163a2c;
-  --panel: #23503f;
-  --panel-2: #2f6350;
-  --edge: #143628;
+  --bg: #1c2421;
+  --bg-2: #161d1a;
+  --panel: #27312c;
+  --panel-2: #36423c;
+  --edge: #131916;
   --ink: #effaf0;
   --ink-2: rgba(239, 250, 240, .84);
   --ink-3: rgba(239, 250, 240, .64);
   --line: rgba(214, 240, 222, .14);
-  --lime: #8fe04f;
-  --lime-deep: #5a9f2b;
-  --sand: #ecdcae;
-  --coral: #ff7f5c;
-  --coral-deep: #c4502f;
-  --aqua: #7fd6e3;
-  --murk: #b39552;
+  --lime: #a8dc6c;
+  --lime-deep: #6f9e3a;
+  --sand: #e9d9ae;
+  --coral: #ef7d5f;
+  --coral-deep: #b9573c;
+  --aqua: #7cc8d3;
+  --murk: #c19a55;
   --ease: cubic-bezier(.16, 1, .3, 1);
   --pop: cubic-bezier(.34, 1.56, .64, 1);
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; background: #0f2a20; color: var(--ink); overflow: hidden; }
-body { font-family: "Nunito", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+html, body { height: 100%; background: #101513; color: var(--ink); overflow: hidden; }
+body { font-family: "Work Sans", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
 ::selection { background: var(--lime); color: var(--bg); }
 a { color: var(--lime); text-underline-offset: .18em; text-decoration-thickness: 1.5px; }
 a:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; border-radius: 4px; }
@@ -43,10 +43,10 @@ a:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; border-ra
 .slide {
   position: absolute; inset: 0; padding: 100px 140px 170px;
   display: flex; flex-direction: column; justify-content: center;
-  background: radial-gradient(1200px 800px at 85% 0%, rgba(143, 224, 79, .07), transparent 60%), radial-gradient(900px 700px at 0% 100%, rgba(127, 214, 227, .05), transparent 60%), var(--bg);
+  background: radial-gradient(1100px 760px at 82% 8%, rgba(233, 217, 174, .09), transparent 62%), radial-gradient(900px 700px at 0% 100%, rgba(168, 220, 108, .06), transparent 60%), var(--bg);
   opacity: 0; visibility: hidden; transition: opacity .6s var(--ease), visibility 0s linear .6s;
 }
-.slide.murky { background: radial-gradient(1200px 800px at 85% 0%, rgba(179, 149, 82, .11), transparent 60%), radial-gradient(900px 700px at 0% 100%, rgba(255, 127, 92, .05), transparent 60%), var(--bg); }
+.slide.murky { background: radial-gradient(1100px 760px at 82% 8%, rgba(193, 154, 85, .13), transparent 62%), radial-gradient(900px 700px at 0% 100%, rgba(239, 125, 95, .07), transparent 60%), var(--bg); }
 .slide.active { opacity: 1; visibility: visible; transition: opacity .6s var(--ease); }
 
 .in { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .8s var(--ease); }
@@ -55,39 +55,38 @@ a:focus-visible { outline: 3px solid var(--lime); outline-offset: 4px; border-ra
 .f { opacity: 0; transform: translateY(26px) scale(.97); transition: opacity .5s var(--ease), transform .6s var(--pop); }
 .f.on { opacity: 1; transform: none; }
 
-h1, h2, h3 { font-weight: 900; letter-spacing: -.02em; text-wrap: balance; line-height: 1.03; }
+h1, h2, h3 { font-weight: 800; letter-spacing: -.028em; text-wrap: balance; line-height: 1.03; }
 h1 { font-size: 118px; }
 h2 { font-size: 76px; }
 h3 { font-size: 38px; line-height: 1.1; letter-spacing: -.01em; }
-.lead { font-size: 36px; font-weight: 700; line-height: 1.34; color: var(--ink-2); max-width: 32ch; text-wrap: pretty; }
-.lead b { color: var(--ink); font-weight: 900; }
+.lead { font-size: 36px; font-weight: 500; line-height: 1.34; color: var(--ink-2); max-width: 32ch; text-wrap: pretty; }
+.lead b { color: var(--ink); font-weight: 700; }
 .lime { color: var(--lime); } .coral { color: var(--coral); } .sand { color: var(--sand); }
 sup.src { font-size: .45em; font-weight: 800; color: var(--lime); vertical-align: super; margin-left: .1em; letter-spacing: 0; }
 .mt-s { margin-top: 26px; } .mt-m { margin-top: 44px; } .mt-l { margin-top: 64px; }
 .row { display: flex; gap: 60px; align-items: center; }
 
-.card { background: var(--panel); border: 3px solid var(--panel-2); border-bottom-width: 9px; border-radius: 28px; }
+.card { background: var(--panel); border: 2px solid var(--panel-2); border-bottom-width: 5px; border-radius: 18px; }
 .chip { display: inline-flex; align-items: center; padding: 10px 22px; border-radius: 999px; font-size: 22px; font-weight: 900; background: var(--panel); border: 2px solid var(--panel-2); border-bottom-width: 5px; color: var(--sand); white-space: nowrap; }
 
 .tip { display: flex; align-items: flex-end; gap: 20px; }
 .tip img { width: 180px; height: 180px; object-fit: contain; flex: none; }
-.bubble { position: relative; background: var(--ink); color: #15382b; padding: 24px 30px; border-radius: 28px; font-size: 29px; font-weight: 800; line-height: 1.32; max-width: 26ch; border-bottom: 7px solid #b9cdbd; }
-.bubble::before { content: ""; position: absolute; left: -15px; bottom: 34px; border: 16px solid transparent; border-right-color: var(--ink); border-left: 0; }
+.bubble { position: relative; background: var(--sand); color: #1c2421; padding: 24px 30px; border-radius: 20px; font-size: 29px; font-weight: 600; line-height: 1.34; max-width: 30ch; border-bottom: 4px solid #cfc4a4; }
+.bubble::before { content: none; position: absolute; left: -15px; bottom: 34px; border: 16px solid transparent; border-right-color: var(--ink); border-left: 0; }
 .bubble small { display: block; font-size: 18px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; color: var(--lime-deep); margin-bottom: 4px; }
 
 .chrome { position: absolute; left: 140px; right: 140px; bottom: 74px; display: flex; justify-content: space-between; align-items: center; z-index: 5; font-size: 22px; font-weight: 800; color: var(--ink-3); pointer-events: none; }
 .chrome .handle { color: var(--ink); }
 .chrome .sec { position: absolute; left: 50%; transform: translateX(-50%); font-size: 17px; letter-spacing: .16em; text-transform: uppercase; }
 .chrome .cnt { font-variant-numeric: tabular-nums; }
-.pipe { position: absolute; left: 140px; right: 140px; bottom: 36px; height: 18px; border-radius: 999px; background: #10301f; box-shadow: inset 0 2px 0 rgba(0, 0, 0, .5), 0 1px 0 rgba(214, 240, 222, .12); z-index: 5; overflow: hidden; }
+.pipe { position: absolute; left: 140px; right: 140px; bottom: 36px; height: 18px; border-radius: 999px; background: #121815; box-shadow: inset 0 2px 0 rgba(0, 0, 0, .5), 0 1px 0 rgba(214, 240, 222, .12); z-index: 5; overflow: hidden; }
 .pipe .water { position: absolute; left: 0; top: 0; bottom: 0; width: calc(var(--p, 0) * 100%); border-radius: 999px; background: var(--aqua); transition: width .8s var(--ease), background .6s var(--ease); }
 .pipe .water::after { content: ""; position: absolute; left: 10px; right: 10px; top: 4px; height: 4px; border-radius: 99px; background: rgba(255, 255, 255, .45); }
 #stage.dirty .pipe .water { background: var(--murk); }
 
 .photo { padding: 0; justify-content: flex-end; }
-.photo .bg { position: absolute; inset: 0; background-size: cover; background-position: center; transform: scale(1.05); transition: transform 10s linear; }
-.photo.active .bg { transform: scale(1); }
-.photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(18, 48, 36, .96) 0%, rgba(18, 48, 36, .8) 36%, rgba(18, 48, 36, .1) 74%, transparent 100%); }
+.photo .bg { position: absolute; inset: 0; background-size: cover; background-position: center; transform: scale(1.02); }
+.photo::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(16, 21, 19, .95) 0%, rgba(16, 21, 19, .78) 36%, rgba(16, 21, 19, .08) 74%, transparent 100%); }
 .photo .txt { position: relative; z-index: 2; padding: 0 140px 190px; }
 .photo .cap { position: absolute; right: 140px; top: 52px; z-index: 3; font-size: 16px; font-weight: 700; color: rgba(239, 250, 240, .62); }
 .cover h1 { font-size: 136px; max-width: 12ch; }
@@ -96,7 +95,7 @@ sup.src { font-size: .45em; font-weight: 800; color: var(--lime); vertical-align
 .hook { display: grid; grid-template-columns: 1fr 520px; align-items: center; gap: 40px; }
 .hook h1 { font-size: 148px; }
 .hook img { width: 520px; filter: drop-shadow(0 30px 40px rgba(0, 0, 0, .35)); }
-.answer { margin-top: 46px; font-size: 56px; font-weight: 900; }
+.answer { margin-top: 40px; font-size: 54px; font-weight: 700; }
 
 .houses { display: grid; grid-template-columns: repeat(5, 140px); gap: 24px 28px; flex: none; }
 .house svg { width: 140px; height: 130px; display: block; }
@@ -112,10 +111,10 @@ sup.src { font-size: .45em; font-weight: 800; color: var(--lime); vertical-align
 .step .num { margin-top: 20px; width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; font-weight: 900; font-size: 26px; background: var(--lime); color: var(--bg); border-bottom: 5px solid var(--lime-deep); }
 .step.bad .num { background: var(--coral); border-bottom-color: var(--coral-deep); }
 .step h3 { margin-top: 14px; font-size: 33px; }
-.step p { margin-top: 10px; font-size: 24px; line-height: 1.38; color: var(--ink-2); font-weight: 600; }
+.step p { margin-top: 10px; font-size: 24px; line-height: 1.38; color: var(--ink-2); font-weight: 500; }
 
 svg { display: block; overflow: visible; }
-svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink); }
+svg text { font-family: "Work Sans", sans-serif; font-weight: 800; fill: var(--ink); }
 .wave { fill: none; stroke: var(--aqua); stroke-width: 4; stroke-dasharray: 2 16; stroke-linecap: round; }
 .active .wave { animation: flow 1.4s linear infinite; }
 .evil { stroke: var(--coral); }
@@ -129,7 +128,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
 .stat { padding: 34px 40px 38px; }
 .stat .k { font-size: 21px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-3); }
 .stat .n { font-size: 104px; font-weight: 900; letter-spacing: -.035em; line-height: 1; margin-top: 8px; font-variant-numeric: tabular-nums; }
-.stat .l { font-size: 25px; font-weight: 700; color: var(--ink-2); line-height: 1.35; margin-top: 8px; }
+.stat .l { font-size: 25px; font-weight: 500; color: var(--ink-2); line-height: 1.35; margin-top: 8px; }
 .waffle { display: grid; grid-template-columns: repeat(12, 36px); gap: 10px; margin-top: 26px; }
 .waffle i { width: 36px; height: 36px; border-radius: 10px; background: var(--panel-2); transform: scale(.4); opacity: .4; transition: transform .35s var(--pop), opacity .3s, background .3s; transition-delay: calc(var(--i) * 45ms + .3s); }
 .active .waffle i { transform: none; opacity: 1; background: var(--coral); }
@@ -144,53 +143,53 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
 .opts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 56px; }
 .opt { padding: 32px 34px; font-size: 38px; font-weight: 900; display: flex; gap: 22px; align-items: center; transition: background .4s, border-color .4s, transform .4s var(--pop), opacity .4s; }
 .opt .k { flex: none; width: 58px; height: 58px; border-radius: 16px; border: 3px solid var(--panel-2); border-bottom-width: 6px; display: grid; place-items: center; font-size: 28px; color: var(--ink-3); }
-.opt span.s { display: block; font-size: 22px; font-weight: 700; color: var(--ink-3); margin-top: 4px; }
+.opt span.s { display: block; font-size: 22px; font-weight: 500; color: var(--ink-3); margin-top: 4px; }
 .reveal .opt.no { opacity: .36; }
-.reveal .opt.yes { background: #1f4a1a; border-color: var(--lime-deep); transform: translateY(-6px); }
+.reveal .opt.yes { background: #2d3d22; border-color: var(--lime-deep); transform: translateY(-6px); }
 .reveal .opt.yes .k { background: var(--lime); color: var(--bg); border-color: var(--lime-deep); }
-.verdict-bar { position: absolute; left: 0; right: 0; bottom: 0; padding: 34px 140px 128px; background: #1c3f17; border-top: 4px solid var(--lime-deep); opacity: 1; transform: translateY(100%); transition: transform .6s var(--pop); }
+.verdict-bar { position: absolute; left: 0; right: 0; bottom: 0; padding: 34px 140px 128px; background: #2d3d22; border-top: 4px solid var(--lime-deep); opacity: 1; transform: translateY(100%); transition: transform .6s var(--pop); }
 .verdict-bar.on { transform: none; }
 .verdict-bar h3 { color: var(--lime); font-size: 50px; }
-.verdict-bar p { margin-top: 8px; font-size: 30px; font-weight: 700; color: var(--ink-2); max-width: 60ch; }
+.verdict-bar p { margin-top: 8px; font-size: 30px; font-weight: 500; color: var(--ink-2); max-width: 60ch; }
 
 .chain { display: grid; grid-template-columns: 1fr 64px 1fr 64px 1fr; margin-top: 56px; align-items: stretch; }
 .link-step { padding: 34px 32px; }
 .link-step .art { font-size: 24px; font-weight: 800; color: var(--sand); }
 .link-step h3 { margin-top: 14px; }
-.link-step p { margin-top: 12px; font-size: 25px; line-height: 1.4; color: var(--ink-2); font-weight: 600; }
+.link-step p { margin-top: 12px; font-size: 25px; line-height: 1.4; color: var(--ink-2); font-weight: 500; }
 .link-step.key { background: var(--sand); border-color: #d9c48d; border-bottom-color: #b49c5d; color: var(--bg); }
 .link-step.key .art, .link-step.key p { color: rgba(10, 29, 22, .8); }
 .arr { display: grid; place-items: center; }
 .arr svg path { stroke: var(--ink-3); stroke-width: 3.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
-.law-quote { margin-top: 40px; padding: 28px 34px; font-size: 28px; line-height: 1.45; color: var(--ink-2); font-weight: 600; max-width: 74ch; }
+.law-quote { margin-top: 40px; padding: 28px 34px; font-size: 28px; line-height: 1.45; color: var(--ink-2); font-weight: 500; max-width: 74ch; }
 .law-quote mark { background: none; color: var(--ink); font-weight: 900; box-shadow: inset 0 -.4em 0 rgba(236, 220, 174, .28); }
 
 .mirror { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 56px; }
 .mirror .card { padding: 42px 46px 46px; }
 .mirror .who { font-size: 22px; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; color: var(--sand); }
 .mirror h2 { font-size: 56px; }
-.mirror p { margin-top: 18px; font-size: 28px; line-height: 1.42; color: var(--ink-2); font-weight: 600; }
+.mirror p { margin-top: 18px; font-size: 28px; line-height: 1.42; color: var(--ink-2); font-weight: 500; }
 
 .q4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 54px; }
 .q { padding: 32px 30px 36px; }
 .q .k { width: 60px; height: 60px; border-radius: 18px; display: grid; place-items: center; background: var(--lime); color: var(--bg); font-weight: 900; font-size: 30px; border-bottom: 6px solid var(--lime-deep); }
 .q .en { margin-top: 20px; font-size: 35px; font-weight: 900; line-height: 1.1; letter-spacing: -.01em; }
-.q .es { margin-top: 12px; font-size: 25px; font-weight: 700; color: var(--ink-2); line-height: 1.35; }
+.q .es { margin-top: 12px; font-size: 25px; font-weight: 500; color: var(--ink-2); line-height: 1.35; }
 
 .tm { display: grid; grid-template-columns: 1020px 1fr; gap: 50px; align-items: center; margin-top: 20px; }
 .legend { display: flex; flex-direction: column; gap: 18px; }
 .thr { display: flex; gap: 18px; align-items: flex-start; padding: 20px 24px 22px; }
 .thr .b { flex: none; width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; font-weight: 900; font-size: 24px; background: var(--coral); color: var(--bg); border-bottom: 5px solid var(--coral-deep); }
-.thr.fix { background: #1c3f17; border-color: #2a5a22; border-bottom-color: var(--lime-deep); }
+.thr.fix { background: #2d3d22; border-color: #3d5530; border-bottom-color: var(--lime-deep); }
 .thr.fix .b { background: var(--lime); border-bottom-color: var(--lime-deep); }
 .thr.fix .b svg path { stroke: var(--bg); stroke-width: 4.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .thr h3.h4 { font-size: 28px; font-weight: 900; }
-.thr p { margin-top: 4px; font-size: 22px; font-weight: 600; line-height: 1.35; color: var(--ink-2); }
+.thr p { margin-top: 4px; font-size: 22px; font-weight: 500; line-height: 1.35; color: var(--ink-2); }
 
 .map { margin-top: 30px; display: grid; grid-template-columns: 1fr 120px 1fr; row-gap: 14px; align-items: center; }
 .map .card { padding: 14px 30px 16px; border-bottom-width: 7px; }
-.map b { display: block; font-size: 32px; font-weight: 900; }
-.map span { display: block; margin-top: 4px; font-size: 23px; font-weight: 600; color: var(--ink-2); }
+.map b { display: block; font-size: 32px; font-weight: 700; }
+.map span { display: block; margin-top: 4px; font-size: 23px; font-weight: 500; color: var(--ink-2); }
 .map .law b { color: var(--lime); }
 .map .lk { height: 6px; border-radius: 99px; background: var(--lime); transform-origin: left; }
 .map .lk.f { opacity: 1; transform: scaleX(0); transition: transform .6s var(--ease); }
@@ -204,7 +203,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
 .ev .dot img { width: 52px; height: 52px; object-fit: contain; }
 .ev .y { margin-top: 24px; font-size: 62px; font-weight: 900; letter-spacing: -.03em; font-variant-numeric: tabular-nums; line-height: 1; }
 .ev .w { margin-top: 8px; font-size: 28px; font-weight: 900; }
-.ev .d { margin-top: 10px; font-size: 23px; line-height: 1.38; color: var(--ink-2); font-weight: 600; max-width: 22ch; }
+.ev .d { margin-top: 10px; font-size: 23px; line-height: 1.38; color: var(--ink-2); font-weight: 500; max-width: 22ch; }
 .ev .d code { font-family: ui-monospace, Consolas, monospace; font-weight: 700; color: var(--ink); background: rgba(239, 250, 240, .12); padding: 0 .3em; border-radius: 6px; }
 .ev.doubt .dot { background: var(--panel-2); border-bottom-color: var(--edge); }
 .ev.doubt .y, .ev.doubt .w { color: var(--ink-3); }
@@ -212,14 +211,14 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
 .charts { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 46px; }
 .chart { padding: 36px 42px 40px; }
 .chart .t { font-size: 30px; font-weight: 900; line-height: 1.2; }
-.chart .s { margin-top: 6px; font-size: 21px; font-weight: 600; color: var(--ink-3); line-height: 1.4; }
+.chart .s { margin-top: 6px; font-size: 21px; font-weight: 500; color: var(--ink-3); line-height: 1.4; }
 .donut { display: flex; align-items: center; gap: 40px; margin-top: 26px; }
 .donut svg { width: 250px; height: 250px; transform: rotate(-90deg); flex: none; }
 .donut .trk { fill: none; stroke: var(--panel-2); stroke-width: 34; }
 .donut .val { fill: none; stroke: var(--coral); stroke-width: 34; stroke-linecap: round; stroke-dasharray: 0 999; transition: stroke-dasharray 1.8s var(--ease) .4s; }
 .active .donut .val { stroke-dasharray: var(--d) 999; }
 .donut .n { font-size: 104px; font-weight: 900; letter-spacing: -.04em; line-height: 1; }
-.donut .l { font-size: 24px; font-weight: 700; color: var(--ink-2); line-height: 1.35; margin-top: 8px; max-width: 17ch; }
+.donut .l { font-size: 24px; font-weight: 500; color: var(--ink-2); line-height: 1.35; margin-top: 8px; max-width: 17ch; }
 .pools { margin-top: 26px; display: flex; flex-direction: column; gap: 24px; }
 .pools .nm { font-size: 24px; font-weight: 900; display: flex; justify-content: space-between; }
 .pools .nm span { color: var(--ink-3); font-weight: 700; }
@@ -233,25 +232,25 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
 .verdict .card { padding: 32px 40px 36px; }
 .verdict .y { font-size: 28px; font-weight: 800; color: var(--ink-3); }
 .verdict .s { margin-top: 8px; font-size: 52px; font-weight: 900; line-height: 1.05; }
-.verdict p { margin-top: 12px; font-size: 25px; font-weight: 600; line-height: 1.42; color: var(--ink-2); }
+.verdict p { margin-top: 12px; font-size: 25px; font-weight: 500; line-height: 1.42; color: var(--ink-2); }
 
 .conds { margin-top: 30px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
-.cond { padding: 26px 30px 28px; font-size: 24px; font-weight: 600; line-height: 1.4; color: var(--ink-2); }
-.cond b { display: block; color: var(--lime); font-size: 31px; font-weight: 900; margin-bottom: 6px; }
+.cond { padding: 26px 30px 28px; font-size: 24px; font-weight: 500; line-height: 1.4; color: var(--ink-2); }
+.cond b { display: block; color: var(--lime); font-size: 31px; font-weight: 700; margin-bottom: 6px; }
 
 .limits { display: grid; grid-template-columns: 1.05fr 1fr; gap: 50px; align-items: start; }
 .limits .card { padding: 30px 38px 32px; }
 .limits .h { font-size: 21px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; color: var(--sand); }
 .limits ul { list-style: none; margin-top: 6px; }
-.limits li { padding: 15px 0; border-top: 2px solid var(--line); font-size: 24px; line-height: 1.38; color: var(--ink-2); font-weight: 600; }
+.limits li { padding: 15px 0; border-top: 2px solid var(--line); font-size: 24px; line-height: 1.38; color: var(--ink-2); font-weight: 500; }
 .limits li:first-child { border-top: 0; }
-.limits li b { color: var(--ink); font-weight: 900; }
+.limits li b { color: var(--ink); font-weight: 700; }
 .dilemma { margin-top: 14px; font-size: 58px; font-weight: 900; line-height: 1.06; }
-.mine { margin-top: 24px; font-size: 29px; line-height: 1.45; color: var(--ink-2); font-weight: 600; }
-.mine b { color: var(--lime); font-weight: 900; }
+.mine { margin-top: 24px; font-size: 29px; line-height: 1.45; color: var(--ink-2); font-weight: 500; }
+.mine b { color: var(--lime); font-weight: 700; }
 
 .refs { margin-top: 30px; columns: 2; column-gap: 64px; list-style: none; counter-reset: r; }
-.refs li { counter-increment: r; break-inside: avoid; position: relative; padding: 0 0 12px 50px; font-size: 18.5px; line-height: 1.4; color: var(--ink-2); font-weight: 600; }
+.refs li { counter-increment: r; break-inside: avoid; position: relative; padding: 0 0 12px 50px; font-size: 18.5px; line-height: 1.4; color: var(--ink-2); font-weight: 500; }
 .refs li::before { content: counter(r); position: absolute; left: 0; top: -2px; width: 33px; height: 33px; border-radius: 10px; display: grid; place-items: center; font-weight: 900; font-size: 17px; color: var(--bg); background: var(--lime); }
 .refs a { word-break: break-word; }
 
@@ -261,9 +260,25 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
 .verdict .col { padding: 6px 40px 0 0; }
 .verdict .col + .col { padding-left: 40px; border-left: 2px solid var(--line); }
 .notes { display: none; }
-#np { position: fixed; left: 50%; bottom: 18px; transform: translate(-50%, 140%); width: min(1100px, 94vw); max-height: 42vh; overflow: auto; background: rgba(15, 42, 32, .98); color: var(--ink); border-radius: 18px; border: 2px solid var(--panel-2); border-bottom-width: 6px; padding: 22px 28px; z-index: 50; box-shadow: 0 18px 50px rgba(0, 0, 0, .55); transition: transform .45s var(--ease); font-size: 19px; line-height: 1.55; font-weight: 600; }
+#np { position: fixed; left: 50%; bottom: 18px; transform: translate(-50%, 140%); width: min(1100px, 94vw); max-height: 42vh; overflow: auto; background: rgba(15, 42, 32, .98); color: var(--ink); border-radius: 18px; border: 2px solid var(--panel-2); border-bottom-width: 6px; padding: 22px 28px; z-index: 50; box-shadow: 0 18px 50px rgba(0, 0, 0, .55); transition: transform .45s var(--ease); font-size: 19px; line-height: 1.55; font-weight: 500; }
 #np.on { transform: translate(-50%, 0); }
 #np .t { display: flex; justify-content: space-between; gap: 20px; font-size: 14px; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; color: var(--lime); margin-bottom: 10px; }
+
+
+.step .pic img, .tl .dot img { animation: bob 5.5s ease-in-out infinite; }
+.step:nth-child(2) .pic img { animation-delay: -1.4s; } .step:nth-child(3) .pic img { animation-delay: -2.8s; } .step:nth-child(4) .pic img { animation-delay: -4.1s; }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+.photo.active .bg { animation: drift 22s ease-in-out infinite alternate; }
+@keyframes drift { from { transform: scale(1.02) translate(0, 0); } to { transform: scale(1.08) translate(-1.2%, -.8%); } }
+.pipe .water::before { content: ""; position: absolute; inset: 0; border-radius: 999px; background: linear-gradient(90deg, transparent 0 30%, rgba(255,255,255,.35) 45%, transparent 60% 100%); background-size: 260px 100%; animation: shimmer 2.6s linear infinite; }
+@keyframes shimmer { from { background-position: -260px 0; } to { background-position: 260px 0; } }
+.ev .dot { animation: pulse 3.2s ease-in-out infinite; }
+.ev:nth-child(2) .dot { animation-delay: .8s; } .ev:nth-child(3) .dot { animation-delay: 1.6s; } .ev:nth-child(4) .dot { animation-delay: 2.4s; }
+@keyframes pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(239,125,95,0); } 50% { box-shadow: 0 0 0 12px rgba(239,125,95,.16); } }
+.timer { margin-top: 40px; height: 10px; border-radius: 99px; background: var(--panel-2); overflow: hidden; max-width: 900px; }
+.timer i { display: block; height: 100%; width: 100%; background: var(--sand); transform-origin: left; }
+.active .timer i { animation: countdown 6.5s linear forwards; }
+@keyframes countdown { to { transform: scaleX(0); } }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: .01s !important; transition-delay: 0s !important; animation: none !important; }
@@ -274,7 +289,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
 <main id="stage" aria-live="polite">
 
 <section class="slide photo" data-sec="Introducción" data-title="Portada">
-  <div class="bg" style="background-image:url('img/portada.jpg')"></div>
+  <div class="bg" style="background-image:url('img/portada-p.jpg')"></div>
   <span class="cap">Imagen ilustrativa generada con IA</span>
   <div class="txt cover">
     <h1 class="in">Alguien abrió las cloacas desde un auto</h1>
@@ -284,15 +299,14 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
   <div class="notes">Buenas. Soy Luciano, estudio Ingeniería en Informática y trabajo en ciberseguridad. En el parcial hablé de cuánto contamina el software. Hoy cambio por completo: les voy a contar de una vez en que alguien contaminó un río sin tocar una gota de agua. Lo hizo desde un auto. Y la pregunta que me interesa es jurídica: cuando el daño lo causa un hacker, ¿quién se hace cargo?</div>
 </section>
 
-<section class="slide" data-sec="Introducción" data-title="¿Un hacker puede contaminar un río?">
-  <div class="hook">
-    <div>
-      <h1 class="in">¿Un hacker puede contaminar un río?</h1>
-      <p class="answer f"><span class="lime">Sí.</span> Ya pasó, hace más de veinte años.</p>
-    </div>
-    <img class="in d2" src="img/gota_shock.png" alt="Gotita, la mascota, con cara de susto">
+<section class="slide photo" data-sec="Introducción" data-title="¿Un hacker puede contaminar un río?">
+  <div class="bg" style="background-image:url('img/arroyo.jpg')"></div>
+  <span class="cap">Imagen ilustrativa generada con IA</span>
+  <div class="txt">
+    <h1 class="in" style="max-width:13ch; font-size:128px">¿Un hacker puede contaminar un río?</h1>
+    <p class="answer f"><span class="lime">Sí.</span> Ya pasó, hace más de veinte años.</p>
   </div>
-  <div class="notes">Pregunta al aula, esperar un segundo. Clic: sí, ya pasó. Pensamos el hackeo como robo de datos o de plata. Pero hoy el agua, las cloacas y las represas se manejan con computadoras, y lo que se maneja con computadoras se puede manejar a distancia. Les presento a Gotita, que nos va a acompañar.</div>
+  <div class="notes">Pregunta al aula, esperar un segundo. Sí, ya pasó. Pensamos el hackeo como robo de datos o de plata. Pero hoy el agua, las cloacas y las represas se manejan con computadoras, y lo que se maneja con computadoras se puede manejar a distancia.</div>
 </section>
 
 <section class="slide" data-sec="Introducción" data-title="Esto nos toca de cerca">
@@ -325,28 +339,28 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     <div style="flex:0 0 640px">
       <h2 class="in">La radio obedecía a cualquiera</h2>
       <p class="lead in d1 mt-s" style="font-size:33px">Las bombas recibían órdenes por radio. <b>No había ninguna defensa que preguntara quién las mandaba.</b></p>
-      <div class="tip f mt-m"><img src="img/gota.png" alt=""><div class="bubble">Es el cuento del tío: «Hola, soy la estación 4». Y el sistema le creía.</div></div>
+      <div class="tip f mt-m"><div class="bubble">Es el cuento del tío: «Hola, soy la estación 4». Y el sistema le creía.</div></div>
     </div>
     <svg class="in d2" viewBox="0 0 900 760" width="900" height="760" role="img" aria-label="Diagrama: el centro de control habla por radio con tres estaciones de bombeo. Un auto se mete en la conversación diciendo que es la estación 4.">
       <path class="wave" d="M250 300 C 420 200, 520 130, 640 120"/>
       <path class="wave" d="M250 330 C 420 330, 520 335, 640 345"/>
       <path class="wave" d="M250 360 C 420 460, 520 540, 640 560"/>
-      <rect x="20" y="230" width="230" height="200" rx="28" fill="#23503f" stroke="#2f6350" stroke-width="3"/>
+      <rect x="20" y="230" width="230" height="200" rx="28" fill="#27312c" stroke="#36423c" stroke-width="3"/>
       <image href="img/central.png" x="35" y="240" width="200" height="180"/>
       <text x="135" y="470" text-anchor="middle" font-size="27">Centro de control</text>
-      <g><rect x="640" y="50" width="230" height="150" rx="26" fill="#23503f" stroke="#2f6350" stroke-width="3"/><image href="img/estacion.png" x="655" y="58" width="110" height="110"/><text x="818" y="132" text-anchor="middle" font-size="25">Est. 1</text></g>
-      <g><rect x="640" y="270" width="230" height="150" rx="26" fill="#23503f" stroke="#2f6350" stroke-width="3"/><image href="img/estacion.png" x="655" y="278" width="110" height="110"/><text x="818" y="352" text-anchor="middle" font-size="25">Est. 2</text></g>
-      <g><rect x="640" y="490" width="230" height="150" rx="26" fill="#23503f" stroke="#2f6350" stroke-width="3"/><image href="img/estacion.png" x="655" y="498" width="110" height="110"/><text x="818" y="572" text-anchor="middle" font-size="25">Est. 3</text></g>
+      <g><rect x="640" y="50" width="230" height="150" rx="26" fill="#27312c" stroke="#36423c" stroke-width="3"/><image href="img/estacion.png" x="655" y="58" width="110" height="110"/><text x="818" y="132" text-anchor="middle" font-size="25">Est. 1</text></g>
+      <g><rect x="640" y="270" width="230" height="150" rx="26" fill="#27312c" stroke="#36423c" stroke-width="3"/><image href="img/estacion.png" x="655" y="278" width="110" height="110"/><text x="818" y="352" text-anchor="middle" font-size="25">Est. 2</text></g>
+      <g><rect x="640" y="490" width="230" height="150" rx="26" fill="#27312c" stroke="#36423c" stroke-width="3"/><image href="img/estacion.png" x="655" y="498" width="110" height="110"/><text x="818" y="572" text-anchor="middle" font-size="25">Est. 3</text></g>
       <g class="f">
         <path class="wave evil" d="M300 580 C 285 520, 270 470, 250 432"/>
         <path class="wave evil" d="M360 585 C 460 600, 560 595, 640 585"/>
         <image href="img/auto.png" x="170" y="560" width="260" height="195"/>
         <circle class="ping" cx="283" cy="576" r="16"/><circle class="ping p2" cx="283" cy="576" r="16"/>
-        <g transform="translate(460 668)"><rect width="330" height="68" rx="34" fill="#ff7f5c"/><text x="165" y="45" text-anchor="middle" font-size="28" style="fill:#0a1d16">«Soy la estación 4»</text></g>
+        <g transform="translate(460 668)"><rect width="330" height="68" rx="34" fill="#ff7f5c"/><text x="165" y="45" text-anchor="middle" font-size="28" style="fill:#1c2421">«Soy la estación 4»</text></g>
       </g>
     </svg>
   </div>
-  <div class="notes">Lo único técnico de la charla, y es simple. El centro de control hablaba por radio con las estaciones de bombeo. El estudio del caso dice que no había ninguna defensa de ciberseguridad: nada que verificara quién mandaba cada orden. Clic: aparece Boden. Es el cuento del tío: llama, dice «soy la estación 4» y le creen. En seguridad eso se llama suplantación. Ojo: no fue un descuido puntual, así se diseñaban casi todos estos sistemas en el 2000. Eso va a importar después.</div>
+  <div class="notes">Lo único técnico de la charla, y es simple. El centro de control hablaba por radio con las estaciones de bombeo. El estudio del caso dice que no había ninguna defensa de ciberseguridad: nada que verificara quién mandaba cada orden. aparece Boden. Es el cuento del tío: llama, dice «soy la estación 4» y le creen. En seguridad eso se llama suplantación. Ojo: no fue un descuido puntual, así se diseñaban casi todos estos sistemas en el 2000. Eso va a importar después.</div>
 </section>
 
 <section class="slide murky" data-sec="Introducción" data-title="Los números del caso" data-dirty>
@@ -381,11 +395,12 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     <div class="opt card yes"><div class="k">B</div><div>El que operaba<span class="s">El municipio o la empresa</span></div></div>
     <div class="opt card no"><div class="k">C</div><div>Nadie<span class="s">Fue un tercero</span></div></div>
   </div>
-  <div class="verdict-bar f" data-reveal>
+  <div class="timer" aria-hidden="true"><i></i></div>
+  <div class="verdict-bar f" data-reveal data-at="6500">
     <h3>Según la ley argentina: B, el que operaba</h3>
     <p>Salvo que demuestre que el ataque fue una verdadera sorpresa. Ahora les explico por qué.</p>
   </div>
-  <div class="notes">Hagamos como en Duolingo. Al hacker lo condenaron en lo penal, pero el río sigue sucio. ¿Quién paga la limpieza? A, el hacker. B, el que operaba el sistema. C, nadie, porque fue un tercero. Dejar que el aula conteste. Clic: según la ley argentina, la respuesta es B, salvo que demuestre que fue una sorpresa. Esa es mi tesis, y ahora la justifico.</div>
+  <div class="notes">Hagamos como en Duolingo. Al hacker lo condenaron en lo penal, pero el río sigue sucio. ¿Quién paga la limpieza? A, el hacker. B, el que operaba el sistema. C, nadie, porque fue un tercero. Dejar que el aula conteste. según la ley argentina, la respuesta es B, salvo que demuestre que fue una sorpresa. Esa es mi tesis, y ahora la justifico.</div>
 </section>
 
 <section class="slide" data-sec="Desarrollo" data-title="Si pasara en Argentina">
@@ -398,7 +413,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     <div class="link-step card key f"><div class="art">Ley 25.675, art. 29</div><h3>Única salida: un tercero</h3><p>Pero solo si se tomaron todas las medidas para evitarlo.</p></div>
   </div>
   <p class="law-quote card f">«…acreditando que, <mark>a pesar de haberse adoptado todas las medidas destinadas a evitarlo</mark> y sin mediar culpa concurrente del responsable, los daños se produjeron por culpa exclusiva de la víctima o de un tercero por quien no debe responder.»<sup class="src">5</sup></p>
-  <div class="notes">Llevemos el caso a la Argentina, paso a paso. Clic: la Constitución, artículo 41, dice que el daño ambiental genera prioritariamente la obligación de recomponer. Clic: la Ley General del Ambiente, artículo 28: el que causa el daño responde de forma objetiva, sin importar si tuvo culpa. Clic: el artículo 29 es la clave. La única salida es probar que fue un tercero, como un hacker. Clic: pero miren lo que exige: haber adoptado todas las medidas destinadas a evitarlo. No alcanza con decir «me hackearon». El Código Civil y Comercial va en la misma línea: el hecho de un tercero solo libera si funciona como un caso fortuito, artículos 1730 y 1731.</div>
+  <div class="notes">Llevemos el caso a la Argentina, paso a paso. la Constitución, artículo 41, dice que el daño ambiental genera prioritariamente la obligación de recomponer. la Ley General del Ambiente, artículo 28: el que causa el daño responde de forma objetiva, sin importar si tuvo culpa. el artículo 29 es la clave. La única salida es probar que fue un tercero, como un hacker. pero miren lo que exige: haber adoptado todas las medidas destinadas a evitarlo. No alcanza con decir «me hackearon». El Código Civil y Comercial va en la misma línea: el hecho de un tercero solo libera si funciona como un caso fortuito, artículos 1730 y 1731.</div>
 </section>
 
 <section class="slide" data-sec="Desarrollo" data-title="La palabra clave: sorpresa">
@@ -407,7 +422,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     <div class="col f"><h2>Para el derecho, el caso fortuito es una sorpresa</h2><p>Es el hecho que no pudo preverse, o que previsto no pudo evitarse<sup class="src">6</sup>. Si era previsible, no libera.</p></div>
     <div class="col f"><h2>Para la seguridad, el objetivo es que nadie se sorprenda</h2><p>Así resume Adam Shostack el <i>threat modeling</i>: pensar qué puede salir mal antes de que pase<sup class="src">7</sup>.</p></div>
   </div>
-  <div class="notes">La idea central del trabajo. Clic: para el derecho, el caso fortuito es, en criollo, una sorpresa. Algo que no se pudo prever, o que se previó pero no se pudo evitar. Clic: en ciberseguridad hay una disciplina, el threat modeling o modelado de amenazas. La enseña Adam Shostack, con quien hice un curso hace unos días en San Francisco. Él dice que el objetivo es que nadie se sorprenda. El derecho pregunta si se podía prever, y la seguridad trabaja para preverlo.</div>
+  <div class="notes">La idea central del trabajo. para el derecho, el caso fortuito es, en criollo, una sorpresa. Algo que no se pudo prever, o que se previó pero no se pudo evitar. en ciberseguridad hay una disciplina, el threat modeling o modelado de amenazas. La enseña Adam Shostack, con quien hice un curso hace unos días en San Francisco. Él dice que el objetivo es que nadie se sorprenda. El derecho pregunta si se podía prever, y la seguridad trabaja para preverlo.</div>
 </section>
 
 <section class="slide" data-sec="Desarrollo" data-title="Las cuatro preguntas de Shostack">
@@ -428,24 +443,24 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     <svg class="in d1" viewBox="0 0 1020 640" width="1020" height="640" role="img" aria-label="Diagrama del sistema: control, radio, bombas y río dentro de una frontera de confianza punteada. Un auto de afuera cruza la frontera.">
       <rect x="10" y="20" width="760" height="470" rx="36" fill="rgba(143,224,79,.05)" stroke="#8fe04f" stroke-width="4" stroke-dasharray="14 14"/>
       <text x="44" y="68" font-size="25" style="fill:#8fe04f">Frontera de confianza: de acá para adentro, confiamos</text>
-      <rect x="50" y="170" width="210" height="190" rx="26" fill="#23503f" stroke="#2f6350" stroke-width="3"/>
+      <rect x="50" y="170" width="210" height="190" rx="26" fill="#27312c" stroke="#36423c" stroke-width="3"/>
       <image href="img/central.png" x="65" y="178" width="180" height="150"/>
       <text x="155" y="352" text-anchor="middle" font-size="24">Control</text>
       <path d="M262 265 H 468" stroke="#7fd6e3" stroke-width="5" stroke-dasharray="2 14" stroke-linecap="round" fill="none" class="wave"/>
       <text x="365" y="245" text-anchor="middle" font-size="23" style="fill:#7fd6e3">radio</text>
-      <rect x="470" y="170" width="210" height="190" rx="26" fill="#23503f" stroke="#2f6350" stroke-width="3"/>
+      <rect x="470" y="170" width="210" height="190" rx="26" fill="#27312c" stroke="#36423c" stroke-width="3"/>
       <image href="img/estacion.png" x="500" y="178" width="150" height="150"/>
       <text x="575" y="352" text-anchor="middle" font-size="24">Bombas</text>
       <path d="M680 320 C 770 350, 830 410, 860 470" stroke="#b39552" stroke-width="7" fill="none" stroke-linecap="round"/>
-      <rect x="790" y="460" width="220" height="170" rx="26" fill="#23503f" stroke="#2f6350" stroke-width="3"/>
+      <rect x="790" y="460" width="220" height="170" rx="26" fill="#27312c" stroke="#36423c" stroke-width="3"/>
       <image href="img/rio.png" x="810" y="466" width="180" height="125"/>
       <text x="900" y="615" text-anchor="middle" font-size="23">Río</text>
       <g class="f">
         <image href="img/auto.png" x="250" y="470" width="210" height="158"/>
         <path d="M400 500 C 440 440, 480 400, 520 362" stroke="#ff7f5c" stroke-width="5" stroke-dasharray="2 12" fill="none" stroke-linecap="round" class="wave evil"/>
-        <circle cx="500" cy="430" r="30" fill="#ff7f5c"/><text x="500" y="441" text-anchor="middle" font-size="30" style="fill:#0a1d16">1</text>
-        <circle cx="365" cy="300" r="30" fill="#ff7f5c"/><text x="365" y="311" text-anchor="middle" font-size="30" style="fill:#0a1d16">2</text>
-        <circle cx="70" cy="150" r="30" fill="#ff7f5c"/><text x="70" y="161" text-anchor="middle" font-size="30" style="fill:#0a1d16">3</text>
+        <circle cx="500" cy="430" r="30" fill="#ff7f5c"/><text x="500" y="441" text-anchor="middle" font-size="30" style="fill:#1c2421">1</text>
+        <circle cx="365" cy="300" r="30" fill="#ff7f5c"/><text x="365" y="311" text-anchor="middle" font-size="30" style="fill:#1c2421">2</text>
+        <circle cx="70" cy="150" r="30" fill="#ff7f5c"/><text x="70" y="161" text-anchor="middle" font-size="30" style="fill:#1c2421">3</text>
       </g>
     </svg>
     <div class="legend">
@@ -455,7 +470,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
       <div class="thr fix card f"><div class="b"><svg width="26" height="26" viewBox="0 0 26 26"><path d="M5 14 l6 6 l11 -13"/></svg></div><div><h3 class="h4">Qué hacer</h3><p>Pedir identificación a cada orden, cortar accesos al que se va y alarmas si una bomba hace algo raro.</p></div></div>
     </div>
   </div>
-  <div class="notes">Así se ve un threat model, simplificado. Pregunta uno, qué construimos: control, radio, bombas y, al final, el río. La línea verde punteada es la frontera de confianza: de acá para adentro confiamos. Es como el guardia de la entrada de un barrio cerrado, y en Maroochy no había guardia. Clic: aparece el auto y cruza la frontera sin que nadie le pida nada. Pregunta dos, qué puede salir mal. Clic: uno, suplantación. Clic: dos, órdenes alteradas. Clic: tres, un acceso que nunca se cortó. Pregunta tres, qué hacer. Clic: pedir identificación a cada orden, cortar accesos al que se va y alarmas. Nada de esto exigía ser un genio, solo hacerse la pregunta.</div>
+  <div class="notes">Así se ve un threat model, simplificado. Pregunta uno, qué construimos: control, radio, bombas y, al final, el río. La línea verde punteada es la frontera de confianza: de acá para adentro confiamos. Es como el guardia de la entrada de un barrio cerrado, y en Maroochy no había guardia. aparece el auto y cruza la frontera sin que nadie le pida nada. Pregunta dos, qué puede salir mal. uno, suplantación. dos, órdenes alteradas. tres, un acceso que nunca se cortó. Pregunta tres, qué hacer. pedir identificación a cada orden, cortar accesos al que se va y alarmas. Nada de esto exigía ser un genio, solo hacerse la pregunta.</div>
 </section>
 
 <section class="slide" data-sec="Desarrollo" data-title="Seguridad y derecho hablan el mismo idioma">
@@ -467,7 +482,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     <div class="card in d3"><b>Transferir</b><span>Pasarle el riesgo a otro, como un seguro.</span></div><div class="lk f"></div><div class="card law f"><b>Seguro ambiental</b><span>Ley 25.675, art. 22</span></div>
     <div class="card in d4"><b>Aceptar</b><span>Convivir con el riesgo, por escrito.</span></div><div class="lk f"></div><div class="card law f"><b>Responder si pasa</b><span>Ley 25.675, art. 28</span></div>
   </div>
-  <div class="notes">Lo que más me sorprendió armando el trabajo. La pregunta tres de Shostack tiene cuatro respuestas posibles, y las cuatro ya existen en el derecho ambiental con otro nombre. Clic, clic: eliminar el riesgo es prevención, artículo 4. Mitigar es la mejora continua que vimos con cuencas: planificar, hacer, verificar, actuar. Transferir es el seguro ambiental del artículo 22. Y aceptar el riesgo está bien, pero si pasa, respondés, artículo 28. Son las mismas herramientas con otro nombre.</div>
+  <div class="notes">Lo que más me sorprendió armando el trabajo. La pregunta tres de Shostack tiene cuatro respuestas posibles, y las cuatro ya existen en el derecho ambiental con otro nombre. eliminar el riesgo es prevención, artículo 4. Mitigar es la mejora continua que vimos con cuencas: planificar, hacer, verificar, actuar. Transferir es el seguro ambiental del artículo 22. Y aceptar el riesgo está bien, pero si pasa, respondés, artículo 28. Son las mismas herramientas con otro nombre.</div>
 </section>
 
 <section class="slide murky" data-sec="Desarrollo" data-title="Veinticinco años, la misma puerta" data-dirty>
@@ -478,8 +493,18 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     <div class="ev f"><div class="dot"><img src="img/maceta.png" alt=""></div><div class="y">2023</div><div class="w">Aliquippa, EE.UU.</div><div class="d">Atacaron equipos de agua que usaban la contraseña de fábrica: <code>1111</code>.<sup class="src">9</sup></div></div>
     <div class="ev f"><div class="dot"><img src="img/represa.png" alt=""></div><div class="y">2025</div><div class="w">Bremanger, Noruega</div><div class="d">Abrieron al 100 % la válvula de una represa, unas 4 horas. Contraseña débil.<sup class="src">10</sup></div></div>
   </div>
-  <div class="tip f mt-l"><img src="img/gota_lupa.png" alt="" style="width:150px;height:150px"><div class="bubble" style="max-width:40ch">Usar la contraseña de fábrica es dejar la llave abajo de la maceta. Todos saben dónde buscar.</div></div>
-  <div class="notes">Este es el centro del argumento. 2000, Maroochy. Clic: 2021, Oldsmar, Florida. Se informó que alguien subió la soda cáustica del agua potable de 100 a 11.100 partes por millón. En 2023, un ex administrador de la ciudad dijo que fue un error de un empleado, así que lo marco gris y no lo uso como prueba. Clic: 2023, Aliquippa, Pensilvania. Un grupo vinculado a Irán atacó equipos de plantas de agua que tenían la contraseña de fábrica, 1111. Clic: 2025, Noruega. Abrieron al cien por ciento la válvula de una represa durante unas cuatro horas, por una contraseña débil según el gerente técnico. Clic: usar la contraseña de fábrica es dejar la llave abajo de la maceta. Veinticinco años, la misma puerta abierta.</div>
+  <div class="tip f mt-l"><div class="bubble" style="max-width:40ch">Usar la contraseña de fábrica es dejar la llave abajo de la maceta. Todos saben dónde buscar.</div></div>
+  <div class="notes">Este es el centro del argumento. 2000, Maroochy. 2021, Oldsmar, Florida. Se informó que alguien subió la soda cáustica del agua potable de 100 a 11.100 partes por millón. En 2023, un ex administrador de la ciudad dijo que fue un error de un empleado, así que lo marco gris y no lo uso como prueba. 2023, Aliquippa, Pensilvania. Un grupo vinculado a Irán atacó equipos de plantas de agua que tenían la contraseña de fábrica, 1111. 2025, Noruega. Abrieron al cien por ciento la válvula de una represa durante unas cuatro horas, por una contraseña débil según el gerente técnico. usar la contraseña de fábrica es dejar la llave abajo de la maceta. Veinticinco años, la misma puerta abierta.</div>
+</section>
+
+<section class="slide photo" data-sec="Desarrollo" data-title="Noruega, abril de 2025">
+  <div class="bg" style="background-image:url('img/represa.jpg')"></div>
+  <span class="cap">Imagen ilustrativa generada con IA</span>
+  <div class="txt">
+    <h1 class="in" style="max-width:17ch; font-size:104px">Abril de 2025: alguien abrió a distancia una represa en Noruega</h1>
+    <p class="lead in d2 mt-s" style="max-width:44ch">La válvula quedó abierta al 100 % unas cuatro horas. Según el gerente técnico, entraron por una contraseña débil.<sup class="src">10</sup></p>
+  </div>
+  <div class="notes">El caso más reciente. El 7 de abril de 2025, en Bremanger, al oeste de Noruega, alguien entró al panel remoto de una represa y abrió una válvula al cien por ciento. Estuvo así unas cuatro horas hasta que lo notaron. El gerente técnico dijo que fue por una contraseña débil. En agosto, la inteligencia noruega se lo atribuyó a hackers prorrusos. No hubo daño ambiental, pero muestra que la puerta sigue abierta.</div>
 </section>
 
 <section class="slide murky" data-sec="Desarrollo" data-title="No es un problema del 2000" data-dirty>
@@ -517,7 +542,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     <div class="cond card f"><b>Proporcional</b>Más intensidad donde el daño puede ser mayor. Un dial, no un interruptor.</div>
     <div class="cond card f"><b>Revisado</b>Escrito, revisado por otros y actualizado. Es la mejor prueba de «todas las medidas».</div>
   </div>
-  <div class="notes">Mi conclusión personal. Clic: en el 2000, Maroochy podía discutir que fue una sorpresa, casi nadie protegía estos sistemas. Clic: hoy no. El riesgo se conoce hace veinticinco años, así que no hay caso fortuito. El que opera responde, recompone el río y después le reclama al atacante. No propongo frenar la digitalización del agua, que tiene muchos beneficios. Propongo autorizar razonablemente, como dijo la Corte en Diaguita de Andalgalá, con tres condiciones. Clic: que la infraestructura que puede dañar el ambiente presente un threat model, como presenta una evaluación de impacto. Argentina ya lista al agua como infraestructura crítica, resolución 1523 de 2019. Clic: proporcional al riesgo. Clic: escrito y revisado, porque es la mejor prueba de que se adoptaron todas las medidas.</div>
+  <div class="notes">Mi conclusión personal. en el 2000, Maroochy podía discutir que fue una sorpresa, casi nadie protegía estos sistemas. hoy no. El riesgo se conoce hace veinticinco años, así que no hay caso fortuito. El que opera responde, recompone el río y después le reclama al atacante. No propongo frenar la digitalización del agua, que tiene muchos beneficios. Propongo autorizar razonablemente, como dijo la Corte en Diaguita de Andalgalá, con tres condiciones. que la infraestructura que puede dañar el ambiente presente un threat model, como presenta una evaluación de impacto. Argentina ya lista al agua como infraestructura crítica, resolución 1523 de 2019. proporcional al riesgo. escrito y revisado, porque es la mejor prueba de que se adoptaron todas las medidas.</div>
 </section>
 
 <section class="slide" data-sec="Conclusiones personales" data-title="Límites y dilema abierto">
@@ -536,11 +561,11 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
       <p class="mine f">Mi opinión: <b>sí, si dejó la puerta abierta.</b> El río no puede esperar a que encuentren al culpable. Y el que opera es el único que podía cerrar la puerta antes.</p>
     </div>
   </div>
-  <div class="notes">Límites honestos. Las cifras de Maroochy van de 800 mil litros a millones según la fuente. Oldsmar quedó en duda. No encontré un fallo argentino sobre daño ambiental causado por un ciberataque, así que aplico la ley a un caso nuevo. Y un matiz que encontré investigando: el artículo 1757 del Código Civil dice que, en actividades riesgosas, cumplir las técnicas de prevención no exime. O sea, el threat model no es un salvoconducto. Es el piso mínimo para siquiera discutir la eximente. Les dejo el dilema que me sigue dando vueltas: ¿es justo que pague el atacado? Clic: mi respuesta es sí, si dejó la puerta abierta. El río no puede esperar a que encuentren al culpable.</div>
+  <div class="notes">Límites honestos. Las cifras de Maroochy van de 800 mil litros a millones según la fuente. Oldsmar quedó en duda. No encontré un fallo argentino sobre daño ambiental causado por un ciberataque, así que aplico la ley a un caso nuevo. Y un matiz que encontré investigando: el artículo 1757 del Código Civil dice que, en actividades riesgosas, cumplir las técnicas de prevención no exime. O sea, el threat model no es un salvoconducto. Es el piso mínimo para siquiera discutir la eximente. Les dejo el dilema que me sigue dando vueltas: ¿es justo que pague el atacado? mi respuesta es sí, si dejó la puerta abierta. El río no puede esperar a que encuentren al culpable.</div>
 </section>
 
 <section class="slide photo" data-sec="Conclusiones personales" data-title="Cierre">
-  <div class="bg" style="background-image:url('img/rio.jpg')"></div>
+  <div class="bg" style="background-image:url('img/cierre.jpg')"></div>
   <span class="cap">Imagen ilustrativa generada con IA</span>
   <div class="txt">
     <h1 class="in" style="max-width:14ch; font-size:116px">Que la próxima vez no sea una sorpresa</h1>
@@ -570,7 +595,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
   <div class="notes">Slide de respaldo con todas las fuentes y sus links. No hace falta presentarla, queda para preguntas.</div>
 </section>
 
-<div class="chrome" aria-hidden="true"><span class="handle">@luciofex</span><span class="sec" id="sec"></span><span class="cnt" id="cnt"></span></div>
+<div class="chrome" aria-hidden="true"><span class="handle">Luciano Esteban · UCEMA</span><span class="sec" id="sec"></span><span class="cnt" id="cnt"></span></div>
 <div class="pipe" aria-hidden="true"><div class="water" id="water"></div></div>
 </main>
 
@@ -588,7 +613,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
   const houses = document.getElementById("houses");
   for (let k = 0; k < 10; k++) {
     const d = document.createElement("div"); d.className = "house" + (k < 6 ? " c" : ""); d.style.setProperty("--i", k);
-    d.innerHTML = '<svg viewBox="0 0 150 140" aria-hidden="true"><path class="roof" d="M75 8 L142 66 Q146 71 140 72 H10 Q4 71 8 66 Z"/><rect class="body" x="24" y="70" width="102" height="64" rx="10"/><rect x="62" y="96" width="26" height="38" rx="6" fill="#0a1d16" opacity=".55"/></svg>';
+    d.innerHTML = '<svg viewBox="0 0 150 140" aria-hidden="true"><path class="roof" d="M75 8 L142 66 Q146 71 140 72 H10 Q4 71 8 66 Z"/><rect class="body" x="24" y="70" width="102" height="64" rx="10"/><rect x="62" y="96" width="26" height="38" rx="6" fill="#1c2421" opacity=".55"/></svg>';
     houses.appendChild(d);
   }
   const waffle = document.getElementById("waffle");
@@ -596,6 +621,15 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
 
   const frags = s => [...s.querySelectorAll(".f")];
   const sync = s => { const r = s.querySelector("[data-reveal]"); s.classList.toggle("reveal", !!(r && r.classList.contains("on"))); };
+  let timers = [];
+  function play(s) {
+    timers.forEach(clearTimeout); timers = [];
+    const step = +(s.dataset.step || 650);
+    frags(s).forEach((f, k) => {
+      const at = f.dataset.at ? +f.dataset.at : 700 + k * step;
+      timers.push(setTimeout(() => { f.classList.add("on"); sync(s); }, at));
+    });
+  }
   function go(i, back) {
     i = Math.max(0, Math.min(slides.length - 1, i));
     if (i === cur) return;
@@ -604,6 +638,7 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     const s = slides[i], nx = slides[i + 1];
     frags(s).forEach(f => f.classList.toggle("on", !!back));
     sync(s);
+    if (back) { timers.forEach(clearTimeout); timers = []; } else play(s);
     stage.classList.toggle("dirty", s.hasAttribute("data-dirty"));
     document.getElementById("cnt").textContent = `${i + 1} / ${slides.length}`;
     document.getElementById("sec").textContent = s.dataset.sec || "";
@@ -613,14 +648,8 @@ svg text { font-family: "Nunito", sans-serif; font-weight: 800; fill: var(--ink)
     document.getElementById("npB").textContent = s.querySelector(".notes")?.textContent.trim() || "";
     history.replaceState(null, "", location.search + "#" + (i + 1));
   }
-  function next() {
-    const s = slides[cur], fs = frags(s), n = fs.filter(f => f.classList.contains("on")).length;
-    if (n < fs.length) { fs[n].classList.add("on"); sync(s); } else go(cur + 1);
-  }
-  function prev() {
-    const s = slides[cur], on = frags(s).filter(f => f.classList.contains("on"));
-    if (on.length) { on[on.length - 1].classList.remove("on"); sync(s); } else go(cur - 1, true);
-  }
+  const next = () => go(cur + 1);
+  const prev = () => go(cur - 1, true);
   const toggleNotes = () => { const on = np.classList.toggle("on"); np.setAttribute("aria-hidden", on ? "false" : "true"); };
   document.addEventListener("keydown", e => {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
