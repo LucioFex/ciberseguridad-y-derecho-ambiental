@@ -6,7 +6,7 @@
 
 Trabajo final de Gestión Ambiental · UCEMA · 2026 · Luciano Esteban
 
-[**Ver la presentación**](https://luciofex.github.io/presentaci-n-2-gestion-ambiental/) · [**Machete para el celular**](https://luciofex.github.io/presentaci-n-2-gestion-ambiental/machete.html) · [Fuentes](#fuentes)
+[**Ver la presentación**](https://luciofex.github.io/presentaci-n-2-gestion-ambiental/)
 
 <a href="https://luciofex.github.io/presentaci-n-2-gestion-ambiental/"><img src="docs/deck.gif" alt="Recorrido por las slides de la presentación" width="800"></a>
 
