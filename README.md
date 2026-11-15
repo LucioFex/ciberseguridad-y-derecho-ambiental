@@ -6,9 +6,9 @@
 
 Trabajo final de Gestión Ambiental · UCEMA · 2026 · Luciano Esteban
 
-[**Ver la presentación**](https://luciofex.github.io/presentaci-n-2-gestion-ambiental/)
+[**Ver la presentación**](https://luciofex.github.io/ciberseguridad-y-derecho-ambiental/)
 
-<a href="https://luciofex.github.io/presentaci-n-2-gestion-ambiental/"><img src="docs/deck.gif" alt="Recorrido por las slides de la presentación" width="800"></a>
+<a href="https://luciofex.github.io/ciberseguridad-y-derecho-ambiental/"><img src="docs/deck.gif" alt="Recorrido por las slides de la presentación" width="800"></a>
 
 </div>
 
